@@ -13,6 +13,10 @@
 body {
   background-color: var(--c-body-bg);
   font-family: 'ABeeZee', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 .dark-theme {
   --c-body-bg: #000000;
@@ -25,21 +29,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 300px;
-  min-height: 300px;
+  width: 300px;
+  height: 300px;
   background-color: var(--c-square-bg);
 }
 .square--aqua-blue {
   background-color: #017187;
 }
-.square--violet-tr {
-  background-color: #5C0187 71%;
+.square--violet {
+  background-color: #5C0187;
 }
-.square--red-tr {
-  background-color: #871101 56%;
+.square--red {
+  background-color: #871101;
 }
-.square--green-tr {
-  background-color: #01870E 63%;
+.square--green {
+  background-color: #01870E;
 }
 .square--yelow {
   background-color: #E2CF22;
@@ -50,13 +54,15 @@ body {
 .square--turquoise {
   background-color: #18D5E1;
 }
+.square--invisible {
+  background-color: transparent;
+}
 .square__text {
   font-weight: 400;
   font-size: 56px;
   color: #000000;
   text-transform: uppercase;
 }
-
 
 .button {
   padding: 20px 40px;
@@ -91,4 +97,56 @@ body {
 }
 .button--turquoise {
   background-color: #18D5E1;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; 
+  background-color: var(--c-section-bg);
+  padding: 50px 40px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 100px;
+  row-gap: 90px;
+  justify-items: center;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.input__field {
+  padding: 13px 15px 15px;
+  border: 2px solid #E5E7EB;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #000000;
+  box-sizing: border-box;
+  max-width: 200px;
+    
+  &::placeholder {
+    color: #9CA3AF;
+  }
+  &:focus{
+    outline: solid 1px rgb(116, 115, 115);
+    background-color: var(--input-focus-bg);
+  }
+}
+.input_ap-text {
+  font-size: 1rem;
 }
