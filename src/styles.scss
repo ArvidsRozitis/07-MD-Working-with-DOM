@@ -1,3 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+:root {
+  --c-body-bg: #E5E5E5;;
+  --c-section-bg: #FFFFFF;
+  --c-btn-text: #FFFFFF;
+  --c-square-bg: #1FC2AE;  
+}
 body {
-  background-color: antiquewhite;
+  background-color: var(--c-body-bg);
+  font-family: 'ABeeZee', sans-serif;
+}
+.dark-theme {
+  --c-body-bg: #000000;
+  --c-section-bg: #292929;
+  --c-square-bg: #18D5E1;  
+}
+
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: var(--c-square-bg);
+}
+.square--aqua-blue {
+  background-color: #017187;
+}
+.square--violet-tr {
+  background-color: #5C0187 71%;
+}
+.square--red-tr {
+  background-color: #871101 56%;
+}
+.square--green-tr {
+  background-color: #01870E 63%;
+}
+.square--yelow {
+  background-color: #E2CF22;
+}
+.square--blue-dark {
+  background-color: #011E87;
+}
+.square--turquoise {
+  background-color: #18D5E1;
+}
+.square__text {
+  font-weight: 400;
+  font-size: 56px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+
+.button {
+  padding: 20px 40px;
+  color: var(--c-btn-text);
+  font-size: 1.25rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: opacitiy 0.2s;
+  
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.button--aqua-blue {
+  background-color: #017187;
+}
+.button--violet {
+  background-color: #5C0187 ;
+}
+.button--red {
+  background-color: #871101 ;
+}
+.button--green {
+  background-color: #01870E ;
+}
+.button--yelow {
+  background-color: #E2CF22;
+}
+.button--blue-dark {
+  background-color: #011E87;
+}
+.button--turquoise {
+  background-color: #18D5E1;
 }
